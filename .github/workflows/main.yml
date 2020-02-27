@@ -1,2 +1,10 @@
 name: A workflow for my Hello World file
 on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        name: checking
+        run: echo hello
+    
